@@ -2296,7 +2296,7 @@
 		"E70A8C95-66DD-455F-AB91-C038E5249963": [
 			{
 				"name": "Orbit",
-				"source": "\nthis.speed = 0;\n\nfunction update( event ) {\n\t//this.object.rotateOnAxis(new THREE.Vector3(0,1,0),10);\n\t//this.object.rotation += new THREE.Vector3(0,1,0);\n\tthis.rotation.z += event.time * 0.00000002 * this.speed;\n}\n\nfunction mousedown(event){\n\t//this.speed = 1 - this.speed;\n}"
+				"source": "\nthis.speed = 0;\n\nfunction update( event ) {\n\t//this.object.rotateOnAxis(new THREE.Vector3(0,1,0),10);\n\t//this.object.rotation += new THREE.Vector3(0,1,0);\n\tthis.rotation.z += event.delta * 0.001 * this.speed;\n}\n\nfunction mousedown(event){\n\t//this.speed = 1 - this.speed;\n}"
 			}],
 		"02EDB48B-2DA2-4C2A-A60B-8355AC5FDA01": [
 			{
